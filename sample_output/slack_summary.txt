@@ -1,0 +1,5 @@
+*ACME Desk AI-answer review, 2026-10-01 to 2026-10-14 vs 2026-09-01 to 2026-09-14*
+Investigate: *Integrations* — mention rate 30% to 15% like-for-like (-15 pp), down in every engine (95% interval -28 to -2 pp, so worth investigating, not proven).
+Other topics: Help desk selection +5 pp, Reporting and operations +5 pp.
+Heads up: raw overall moved -21 pp but like-for-like only -2 pp because the engine mix changed.
+Read first: a0503, a0507, a0511, a0501

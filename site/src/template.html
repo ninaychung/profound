@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ACME Desk Take Home Assignment</title>
+<style>/*CSS*/</style>
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="apptitle">ACME Desk Take Home Assignment</div>
+    <nav id="nav" aria-label="Pages"></nav>
+    <button class="sidelink" id="code-link">View code</button>
+  </aside>
+  <main class="main">
+
+    <section class="page" data-page="analysis">
+      <header class="ph"><h1>Analysis</h1></header>
+      <div class="kpigrid" id="kpis"></div>
+      <p class="cap hint">Hover any number to see how it was calculated. Click a bar or cell to read the answers behind it.</p>
+      <div class="card"><h3 class="ch" id="t-topic"></h3>
+        <p class="cap" id="cap-topic"></p>
+        <div class="ctl" id="ctl-topic"></div><div class="legend key" id="lg-topic"></div><div id="c-lfl"></div><div class="hkey" id="lg-heat"></div><div id="c-topics"></div></div>
+      <div class="card"><h3 class="ch">Mention rate change by topic and prompt</h3>
+        <p class="cap">Change in mention rate (like-for-like) from baseline to current, in percentage points. Red = fewer answers name the brand.</p>
+        <div class="ctl" id="ctl-bars"></div><div id="c-ppp"></div></div>
+      <div class="card"><h3 class="ch">Citation rate</h3>
+        <p class="cap">Share of answers citing ACME Desk's own domain. Counts answers, not distinct URLs.</p>
+        <div class="ctl" id="ctl-own"></div><div class="legend key" id="lg-own"></div><div id="c-own"></div></div>
+      <div class="card"><h3 class="ch">How often each brand appears in answers</h3>
+        <p class="cap">Share of answers that name each brand, and where it is listed when named (1 = first; lower is better).</p>
+        <div class="ctl" id="ctl-pos"></div><div id="c-pos"></div></div>
+      <div class="card"><h3 class="ch">Is each change real or noise?</h3>
+        <p class="cap">Our samples are small, so a change we see might just be luck. This section checks how much to trust each change.</p>
+        <ul class="plain how">
+          <li><b>Plausible range (95% interval):</b> the range the true change most likely sits in, given how few answers we have. A wide bar means a small sample.</li>
+          <li><b>If the range crosses 0</b>, we cannot rule out that nothing changed. The bar is faded and the verdict says "could be 0".</li>
+          <li><b>p-value:</b> the chance of seeing a gap this big if nothing had really changed. Below 0.05 is the usual bar for "statistically significant". It is calculated per engine.</li>
+        </ul>
+        <div class="ctl" id="ctl-ci"></div><div class="legend" id="ci-legend"></div><div id="c-ci"></div><div id="ci-table"></div></div>
+    </section>
+
+    <section class="page" data-page="reco" hidden>
+      <header class="ph"><h1>Recommendation</h1></header>
+      <div class="warn" id="r-msg" hidden></div>
+      <div id="r-body">
+        <section class="card reco" id="reco" aria-live="polite"></section>
+      </div>
+      <div class="card" id="reco-actions" style="margin-top:12px"></div>
+      <div class="card" style="margin-top:12px"><h3 class="ch">Time period</h3><div id="period-r"></div></div>
+      <div class="card" id="reco-detail"></div>
+    </section>
+
+    <section class="page" data-page="about" hidden>
+      <header class="ph"><h1>About ACME Desk</h1></header>
+      <div id="brief"></div>
+    </section>
+
+    <section class="page" data-page="prompts" hidden>
+      <header class="ph"><h1>Topics and Prompts</h1></header>
+      <div id="prompts-host"></div>
+    </section>
+
+    <section class="page" data-page="competitors" hidden>
+      <header class="ph"><h1>Competitors</h1></header>
+      <div class="card" id="comp-host"></div>
+    </section>
+
+    <section class="page" data-page="answers" hidden>
+      <header class="ph"><h1>Answers data</h1></header>
+      <div class="card">
+        <h3 class="ch">Raw answers.json</h3>
+        <div class="toolbar"><input type="file" id="files" multiple accept=".json,.jsonl" aria-label="Load a different export (answers.jsonl and prompts.json)"><button class="btn" id="sample">Reset to the supplied data</button></div>
+        <p class="cap" id="err" style="color:var(--neg)" role="alert"></p>
+        <p class="cap">Click a row to edit or delete it.</p>
+        <div id="src-host"></div>
+      </div>
+      <div class="card">
+        <h3 class="ch">Cleaned Answers.json Table</h3>
+        <div class="pills" id="cleanup"></div>
+        <p class="cap" id="win-note" style="margin-top:8px"></p>
+        <div id="t-clean"></div>
+      </div>
+    </section>
+
+    <section class="page" data-page="code" hidden>
+      <header class="ph"><h1>Code</h1></header>
+      <div class="card"><div id="code-host"></div></div>
+    </section>
+  </main>
+</div>
+
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-label="Edit record">
+  <div class="mbox"><button class="btn close" aria-label="Close">Close</button><div id="modal-body"></div></div>
+</div>
+<div id="tip" role="tooltip"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Answer evidence">
+  <header><div><h2 style="font-size:15px"></h2><div class="sub"></div></div><button class="btn" aria-label="Close">Close</button></header>
+  <div class="body"></div>
+</aside>
+<script>/*DATA*/</script>
+<script>/*SOURCES*/</script>
+<script>/*JS*/</script>
+</body>
+</html>

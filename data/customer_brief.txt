@@ -1,0 +1,11 @@
+Customer: ACME Desk (fictional)
+
+ACME Desk sells help desk software to growing B2B software companies. Its marketing team consists of a director and two content marketers. The product includes a shared inbox, ticket routing, support reporting, and CRM connections. Relay Inbox and Clearqueue are fictional competitors.
+
+Each week, the director spends about three hours reading AI answers and comparing spreadsheets to decide which buyer questions or topics the team should investigate. The team can investigate one issue per week. It does not have capacity for another dashboard that requires extensive manual review.
+
+Objective: help the marketing director choose one evidence supported investigation for the next weekly meeting and make the review process repeatable as new answer exports arrive.
+
+The attached data is the only evidence available. It contains observed answers and citation identifiers, not customer traffic, leads, revenue, search volume, campaign history, or verified causes of change. The team has not established whether changes in AI answers affect sales. Separate what you observe from what you would need to verify with the customer.
+
+A useful output should identify the issue, explain why it deserves attention, point to supporting records, and make the next investigation clear. Choose the implementation and format you think best fits this team.

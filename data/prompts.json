@@ -1,0 +1,62 @@
+[
+  {
+    "prompt_id": "p11",
+    "topic": "Help desk selection",
+    "prompt": "What help desk tools should a growing software company consider?"
+  },
+  {
+    "prompt_id": "p12",
+    "topic": "Help desk selection",
+    "prompt": "Compare customer support software for a team of 20 agents."
+  },
+  {
+    "prompt_id": "p13",
+    "topic": "Help desk selection",
+    "prompt": "Which help desk platforms work well for B2B software companies?"
+  },
+  {
+    "prompt_id": "p14",
+    "topic": "Help desk selection",
+    "prompt": "What should we look for when choosing a shared support inbox?"
+  },
+  {
+    "prompt_id": "p21",
+    "topic": "Reporting and operations",
+    "prompt": "Which support tools help managers track response time?"
+  },
+  {
+    "prompt_id": "p22",
+    "topic": "Reporting and operations",
+    "prompt": "What help desk software is useful for monitoring support workload?"
+  },
+  {
+    "prompt_id": "p23",
+    "topic": "Reporting and operations",
+    "prompt": "Compare platforms for weekly customer support reporting."
+  },
+  {
+    "prompt_id": "p24",
+    "topic": "Reporting and operations",
+    "prompt": "Which customer support tools make it easy to review team performance?"
+  },
+  {
+    "prompt_id": "p31",
+    "topic": "Integrations",
+    "prompt": "Which help desk tools connect support tickets with CRM accounts?"
+  },
+  {
+    "prompt_id": "p32",
+    "topic": "Integrations",
+    "prompt": "What support platforms integrate well with a sales CRM?"
+  },
+  {
+    "prompt_id": "p33",
+    "topic": "Integrations",
+    "prompt": "Compare help desk tools for a team that needs CRM ticket sync."
+  },
+  {
+    "prompt_id": "p34",
+    "topic": "Integrations",
+    "prompt": "Which support tools help sales teams see open customer issues?"
+  }
+]

@@ -1,0 +1,27 @@
+DATA DICTIONARY
+
+answers.jsonl
+answer_id: string, stable identifier for an observation or failed attempt. Repeated identical IDs represent the same record appearing again in the export, not additional observations.
+prompt_id: string, foreign key to prompts.json.
+country: string, country code. All records in this exercise are US.
+model: string, AI engine display name.
+model_id: string, engine identifier verified against the Profound connector catalog. No model version is implied.
+observed_at: ISO 8601 timestamp with timezone offset. Reporting windows use America/New_York dates, inclusive.
+status: success or error. An error means no answer was collected, not that the brand was absent.
+response_text: synthetic answer text on success; null on error.
+mentions: list of brand objects on success; null on error. Each object has brand (string) and position (one based rank within that answer's shortlist). Each brand appears at most once per answer. These annotations are supplied for convenience and can be checked against response_text.
+citations: list of source objects on success; null on error. Each contains a url. These are sources referenced by that answer, not page visits. A cited domain does not necessarily imply a brand mention.
+
+prompts.json
+prompt_id: unique prompt identifier.
+topic: topic grouping.
+prompt: tracked question text.
+
+MEASURES
+Brand visibility: successful answers that mention the brand divided by successful answers in the selected scope. Count each brand at most once per answer. Report either a fraction or a percentage and label it. This corresponds to the Profound connector's visibility_score concept; the connector returns fractions.
+Average position: mean shortlist position among answers that mention the brand. Absence is not position zero.
+Citation count: number of source references in the selected successful answers. State whether you count references or distinct URLs. Do not interpret it as traffic or revenue.
+Percentage point change: later visibility percentage minus earlier visibility percentage. This differs from relative percent change.
+
+COLLECTION NOTES
+The export is not a census of all AI answers or user demand. It includes repeated observations of tracked prompts. Model and prompt counts may differ between windows, so describe the scope and limitations of comparisons. No causal conclusion or formal statistical significance is supplied. Basic arithmetic and transparent reasoning are sufficient; no advanced statistical model is required.

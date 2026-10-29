@@ -1,0 +1,1332 @@
+{
+  "hygiene": {
+    "raw_lines": 618,
+    "duplicate_rows_removed": 6,
+    "unique_records": 612,
+    "error_rows_excluded": 12,
+    "successful_answers": 600
+  },
+  "baseline": [
+    "2026-09-01",
+    "2026-09-14"
+  ],
+  "current": [
+    "2026-10-01",
+    "2026-10-14"
+  ],
+  "models": [
+    "ChatGPT",
+    "Google Gemini"
+  ],
+  "brand": "ACME Desk",
+  "coverage": {
+    "baseline": {
+      "Google Gemini": 60,
+      "ChatGPT": 240
+    },
+    "current": {
+      "Google Gemini": 240,
+      "ChatGPT": 60
+    }
+  },
+  "overall": {
+    "raw_vis": {
+      "baseline": 0.4666666666666667,
+      "current": 0.26
+    },
+    "raw_change_pp": -20.666666666666668,
+    "balanced_vis": {
+      "baseline": 0.3666666666666667,
+      "current": 0.35
+    },
+    "balanced_change_pp": -1.6666666666666718,
+    "per_model": {
+      "ChatGPT": {
+        "baseline": {
+          "n": 240,
+          "k": 128,
+          "vis": 0.5333333333333333,
+          "avg_pos": 2.046875,
+          "pos1": 40
+        },
+        "current": {
+          "n": 60,
+          "k": 30,
+          "vis": 0.5,
+          "avg_pos": 1.8666666666666667,
+          "pos1": 10
+        }
+      },
+      "Google Gemini": {
+        "baseline": {
+          "n": 60,
+          "k": 12,
+          "vis": 0.2,
+          "avg_pos": 1.5833333333333333,
+          "pos1": 8
+        },
+        "current": {
+          "n": 240,
+          "k": 48,
+          "vis": 0.2,
+          "avg_pos": 1.9375,
+          "pos1": 17
+        }
+      }
+    }
+  },
+  "prompts": [
+    {
+      "prompt_id": "p11",
+      "topic": "Help desk selection",
+      "prompt": "What help desk tools should a growing software company consider?",
+      "baseline": 0.375,
+      "current": 0.475,
+      "change_pp": 9.999999999999998,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 20,
+            "k": 11,
+            "vis": 0.55,
+            "avg_pos": 2.3636363636363638,
+            "pos1": 1
+          },
+          "current": {
+            "n": 5,
+            "k": 3,
+            "vis": 0.6,
+            "avg_pos": 2.0,
+            "pos1": 1
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 5,
+            "k": 1,
+            "vis": 0.2,
+            "avg_pos": 2.0,
+            "pos1": 0
+          },
+          "current": {
+            "n": 20,
+            "k": 7,
+            "vis": 0.35,
+            "avg_pos": 2.0,
+            "pos1": 2
+          }
+        }
+      },
+      "min_cell_n": 5,
+      "thin": true
+    },
+    {
+      "prompt_id": "p12",
+      "topic": "Help desk selection",
+      "prompt": "Compare customer support software for a team of 20 agents.",
+      "baseline": 0.525,
+      "current": 0.425,
+      "change_pp": -10.000000000000004,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 20,
+            "k": 13,
+            "vis": 0.65,
+            "avg_pos": 2.230769230769231,
+            "pos1": 3
+          },
+          "current": {
+            "n": 5,
+            "k": 3,
+            "vis": 0.6,
+            "avg_pos": 1.6666666666666667,
+            "pos1": 1
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 5,
+            "k": 2,
+            "vis": 0.4,
+            "avg_pos": 2.0,
+            "pos1": 1
+          },
+          "current": {
+            "n": 20,
+            "k": 5,
+            "vis": 0.25,
+            "avg_pos": 1.8,
+            "pos1": 2
+          }
+        }
+      },
+      "min_cell_n": 5,
+      "thin": true
+    },
+    {
+      "prompt_id": "p13",
+      "topic": "Help desk selection",
+      "prompt": "Which help desk platforms work well for B2B software companies?",
+      "baseline": 0.4,
+      "current": 0.375,
+      "change_pp": -2.500000000000002,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 20,
+            "k": 12,
+            "vis": 0.6,
+            "avg_pos": 2.0833333333333335,
+            "pos1": 4
+          },
+          "current": {
+            "n": 5,
+            "k": 3,
+            "vis": 0.6,
+            "avg_pos": 2.0,
+            "pos1": 1
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 5,
+            "k": 1,
+            "vis": 0.2,
+            "avg_pos": 3.0,
+            "pos1": 0
+          },
+          "current": {
+            "n": 20,
+            "k": 3,
+            "vis": 0.15,
+            "avg_pos": 1.6666666666666667,
+            "pos1": 2
+          }
+        }
+      },
+      "min_cell_n": 5,
+      "thin": true
+    },
+    {
+      "prompt_id": "p14",
+      "topic": "Help desk selection",
+      "prompt": "What should we look for when choosing a shared support inbox?",
+      "baseline": 0.3,
+      "current": 0.525,
+      "change_pp": 22.500000000000004,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 20,
+            "k": 12,
+            "vis": 0.6,
+            "avg_pos": 1.9166666666666667,
+            "pos1": 5
+          },
+          "current": {
+            "n": 5,
+            "k": 4,
+            "vis": 0.8,
+            "avg_pos": 1.5,
+            "pos1": 2
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 5,
+            "k": 0,
+            "vis": 0.0,
+            "avg_pos": null,
+            "pos1": 0
+          },
+          "current": {
+            "n": 20,
+            "k": 5,
+            "vis": 0.25,
+            "avg_pos": 1.6,
+            "pos1": 2
+          }
+        }
+      },
+      "min_cell_n": 5,
+      "thin": true
+    },
+    {
+      "prompt_id": "p21",
+      "topic": "Reporting and operations",
+      "prompt": "Which support tools help managers track response time?",
+      "baseline": 0.42500000000000004,
+      "current": 0.275,
+      "change_pp": -15.000000000000002,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 20,
+            "k": 13,
+            "vis": 0.65,
+            "avg_pos": 1.8461538461538463,
+            "pos1": 4
+          },
+          "current": {
+            "n": 5,
+            "k": 1,
+            "vis": 0.2,
+            "avg_pos": 2.0,
+            "pos1": 0
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 5,
+            "k": 1,
+            "vis": 0.2,
+            "avg_pos": 1.0,
+            "pos1": 1
+          },
+          "current": {
+            "n": 20,
+            "k": 7,
+            "vis": 0.35,
+            "avg_pos": 2.142857142857143,
+            "pos1": 2
+          }
+        }
+      },
+      "min_cell_n": 5,
+      "thin": true
+    },
+    {
+      "prompt_id": "p22",
+      "topic": "Reporting and operations",
+      "prompt": "What help desk software is useful for monitoring support workload?",
+      "baseline": 0.42500000000000004,
+      "current": 0.525,
+      "change_pp": 9.999999999999998,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 20,
+            "k": 9,
+            "vis": 0.45,
+            "avg_pos": 2.111111111111111,
+            "pos1": 3
+          },
+          "current": {
+            "n": 5,
+            "k": 4,
+            "vis": 0.8,
+            "avg_pos": 2.5,
+            "pos1": 0
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 5,
+            "k": 2,
+            "vis": 0.4,
+            "avg_pos": 2.0,
+            "pos1": 1
+          },
+          "current": {
+            "n": 20,
+            "k": 5,
+            "vis": 0.25,
+            "avg_pos": 2.2,
+            "pos1": 1
+          }
+        }
+      },
+      "min_cell_n": 5,
+      "thin": true
+    },
+    {
+      "prompt_id": "p23",
+      "topic": "Reporting and operations",
+      "prompt": "Compare platforms for weekly customer support reporting.",
+      "baseline": 0.42500000000000004,
+      "current": 0.47500000000000003,
+      "change_pp": 4.999999999999999,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 20,
+            "k": 13,
+            "vis": 0.65,
+            "avg_pos": 2.076923076923077,
+            "pos1": 4
+          },
+          "current": {
+            "n": 5,
+            "k": 4,
+            "vis": 0.8,
+            "avg_pos": 1.75,
+            "pos1": 2
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 5,
+            "k": 1,
+            "vis": 0.2,
+            "avg_pos": 1.0,
+            "pos1": 1
+          },
+          "current": {
+            "n": 20,
+            "k": 3,
+            "vis": 0.15,
+            "avg_pos": 1.6666666666666667,
+            "pos1": 2
+          }
+        }
+      },
+      "min_cell_n": 5,
+      "thin": true
+    },
+    {
+      "prompt_id": "p24",
+      "topic": "Reporting and operations",
+      "prompt": "Which customer support tools make it easy to review team performance?",
+      "baseline": 0.325,
+      "current": 0.525,
+      "change_pp": 20.0,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 20,
+            "k": 13,
+            "vis": 0.65,
+            "avg_pos": 2.076923076923077,
+            "pos1": 4
+          },
+          "current": {
+            "n": 5,
+            "k": 4,
+            "vis": 0.8,
+            "avg_pos": 1.75,
+            "pos1": 2
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 5,
+            "k": 0,
+            "vis": 0.0,
+            "avg_pos": null,
+            "pos1": 0
+          },
+          "current": {
+            "n": 20,
+            "k": 5,
+            "vis": 0.25,
+            "avg_pos": 2.6,
+            "pos1": 0
+          }
+        }
+      },
+      "min_cell_n": 5,
+      "thin": true
+    },
+    {
+      "prompt_id": "p31",
+      "topic": "Integrations",
+      "prompt": "Which help desk tools connect support tickets with CRM accounts?",
+      "baseline": 0.325,
+      "current": 0.2,
+      "change_pp": -12.5,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 20,
+            "k": 9,
+            "vis": 0.45,
+            "avg_pos": 1.8888888888888888,
+            "pos1": 4
+          },
+          "current": {
+            "n": 5,
+            "k": 2,
+            "vis": 0.4,
+            "avg_pos": 2.0,
+            "pos1": 0
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 5,
+            "k": 1,
+            "vis": 0.2,
+            "avg_pos": 1.0,
+            "pos1": 1
+          },
+          "current": {
+            "n": 20,
+            "k": 0,
+            "vis": 0.0,
+            "avg_pos": null,
+            "pos1": 0
+          }
+        }
+      },
+      "min_cell_n": 5,
+      "thin": true
+    },
+    {
+      "prompt_id": "p32",
+      "topic": "Integrations",
+      "prompt": "What support platforms integrate well with a sales CRM?",
+      "baseline": 0.30000000000000004,
+      "current": 0.175,
+      "change_pp": -12.500000000000005,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 20,
+            "k": 8,
+            "vis": 0.4,
+            "avg_pos": 2.0,
+            "pos1": 2
+          },
+          "current": {
+            "n": 5,
+            "k": 1,
+            "vis": 0.2,
+            "avg_pos": 1.0,
+            "pos1": 1
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 5,
+            "k": 1,
+            "vis": 0.2,
+            "avg_pos": 1.0,
+            "pos1": 1
+          },
+          "current": {
+            "n": 20,
+            "k": 3,
+            "vis": 0.15,
+            "avg_pos": 1.3333333333333333,
+            "pos1": 2
+          }
+        }
+      },
+      "min_cell_n": 5,
+      "thin": true
+    },
+    {
+      "prompt_id": "p33",
+      "topic": "Integrations",
+      "prompt": "Compare help desk tools for a team that needs CRM ticket sync.",
+      "baseline": 0.30000000000000004,
+      "current": 0.05,
+      "change_pp": -25.000000000000007,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 20,
+            "k": 8,
+            "vis": 0.4,
+            "avg_pos": 2.125,
+            "pos1": 2
+          },
+          "current": {
+            "n": 5,
+            "k": 0,
+            "vis": 0.0,
+            "avg_pos": null,
+            "pos1": 0
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 5,
+            "k": 1,
+            "vis": 0.2,
+            "avg_pos": 1.0,
+            "pos1": 1
+          },
+          "current": {
+            "n": 20,
+            "k": 2,
+            "vis": 0.1,
+            "avg_pos": 2.5,
+            "pos1": 0
+          }
+        }
+      },
+      "min_cell_n": 5,
+      "thin": true
+    },
+    {
+      "prompt_id": "p34",
+      "topic": "Integrations",
+      "prompt": "Which support tools help sales teams see open customer issues?",
+      "baseline": 0.275,
+      "current": 0.175,
+      "change_pp": -10.000000000000004,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 20,
+            "k": 7,
+            "vis": 0.35,
+            "avg_pos": 1.7142857142857142,
+            "pos1": 4
+          },
+          "current": {
+            "n": 5,
+            "k": 1,
+            "vis": 0.2,
+            "avg_pos": 2.0,
+            "pos1": 0
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 5,
+            "k": 1,
+            "vis": 0.2,
+            "avg_pos": 1.0,
+            "pos1": 1
+          },
+          "current": {
+            "n": 20,
+            "k": 3,
+            "vis": 0.15,
+            "avg_pos": 1.3333333333333333,
+            "pos1": 2
+          }
+        }
+      },
+      "min_cell_n": 5,
+      "thin": true
+    }
+  ],
+  "topics": [
+    {
+      "topic": "Integrations",
+      "baseline": 0.30000000000000004,
+      "current": 0.15,
+      "change_pp": -15.000000000000005,
+      "relative_change": -0.5000000000000001,
+      "ci95_pp": [
+        -28.125,
+        -1.8750000000000018
+      ],
+      "ci_excludes_zero": true,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 80,
+            "k": 32,
+            "vis": 0.4,
+            "avg_pos": 1.9375,
+            "pos1": 12
+          },
+          "current": {
+            "n": 20,
+            "k": 4,
+            "vis": 0.2,
+            "avg_pos": 1.75,
+            "pos1": 1
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 20,
+            "k": 4,
+            "vis": 0.2,
+            "avg_pos": 1.0,
+            "pos1": 4
+          },
+          "current": {
+            "n": 80,
+            "k": 8,
+            "vis": 0.1,
+            "avg_pos": 1.625,
+            "pos1": 4
+          }
+        }
+      },
+      "per_model_p": {
+        "ChatGPT": 0.09558066411333987,
+        "Google Gemini": 0.2183548258601612
+      },
+      "models_agree_down": true,
+      "models_agree_up": false,
+      "raw": {
+        "baseline": {
+          "n": 100,
+          "k": 36,
+          "vis": 0.36,
+          "avg_pos": 1.8333333333333333,
+          "pos1": 16
+        },
+        "current": {
+          "n": 100,
+          "k": 12,
+          "vis": 0.12,
+          "avg_pos": 1.6666666666666667,
+          "pos1": 5
+        }
+      },
+      "raw_change_pp": -24.0
+    },
+    {
+      "topic": "Help desk selection",
+      "baseline": 0.4,
+      "current": 0.45,
+      "change_pp": 4.999999999999999,
+      "relative_change": 0.12499999999999997,
+      "ci95_pp": [
+        -10.624999999999996,
+        19.375000000000004
+      ],
+      "ci_excludes_zero": false,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 80,
+            "k": 48,
+            "vis": 0.6,
+            "avg_pos": 2.1458333333333335,
+            "pos1": 13
+          },
+          "current": {
+            "n": 20,
+            "k": 13,
+            "vis": 0.65,
+            "avg_pos": 1.7692307692307692,
+            "pos1": 5
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 20,
+            "k": 4,
+            "vis": 0.2,
+            "avg_pos": 2.25,
+            "pos1": 1
+          },
+          "current": {
+            "n": 80,
+            "k": 20,
+            "vis": 0.25,
+            "avg_pos": 1.8,
+            "pos1": 8
+          }
+        }
+      },
+      "per_model_p": {
+        "ChatGPT": 0.6817721588265283,
+        "Google Gemini": 0.639575172317403
+      },
+      "models_agree_down": false,
+      "models_agree_up": true,
+      "raw": {
+        "baseline": {
+          "n": 100,
+          "k": 52,
+          "vis": 0.52,
+          "avg_pos": 2.1538461538461537,
+          "pos1": 14
+        },
+        "current": {
+          "n": 100,
+          "k": 33,
+          "vis": 0.33,
+          "avg_pos": 1.7878787878787878,
+          "pos1": 13
+        }
+      },
+      "raw_change_pp": -19.0
+    },
+    {
+      "topic": "Reporting and operations",
+      "baseline": 0.4,
+      "current": 0.45,
+      "change_pp": 4.999999999999999,
+      "relative_change": 0.12499999999999997,
+      "ci95_pp": [
+        -9.375,
+        18.749999999999993
+      ],
+      "ci_excludes_zero": false,
+      "per_model": {
+        "ChatGPT": {
+          "baseline": {
+            "n": 80,
+            "k": 48,
+            "vis": 0.6,
+            "avg_pos": 2.0208333333333335,
+            "pos1": 15
+          },
+          "current": {
+            "n": 20,
+            "k": 13,
+            "vis": 0.65,
+            "avg_pos": 2.0,
+            "pos1": 4
+          }
+        },
+        "Google Gemini": {
+          "baseline": {
+            "n": 20,
+            "k": 4,
+            "vis": 0.2,
+            "avg_pos": 1.5,
+            "pos1": 3
+          },
+          "current": {
+            "n": 80,
+            "k": 20,
+            "vis": 0.25,
+            "avg_pos": 2.2,
+            "pos1": 5
+          }
+        }
+      },
+      "per_model_p": {
+        "ChatGPT": 0.6817721588265283,
+        "Google Gemini": 0.639575172317403
+      },
+      "models_agree_down": false,
+      "models_agree_up": true,
+      "raw": {
+        "baseline": {
+          "n": 100,
+          "k": 52,
+          "vis": 0.52,
+          "avg_pos": 1.9807692307692308,
+          "pos1": 18
+        },
+        "current": {
+          "n": 100,
+          "k": 33,
+          "vis": 0.33,
+          "avg_pos": 2.121212121212121,
+          "pos1": 9
+        }
+      },
+      "raw_change_pp": -19.0
+    }
+  ],
+  "winners": [
+    {
+      "topic": "Help desk selection",
+      "window": "baseline",
+      "n": 100,
+      "ACME Desk": 0.10625,
+      "Clearqueue": 0.0,
+      "Relay Inbox": 0.89375
+    },
+    {
+      "topic": "Help desk selection",
+      "window": "current",
+      "n": 100,
+      "ACME Desk": 0.17500000000000002,
+      "Clearqueue": 0.0,
+      "Relay Inbox": 0.8250000000000001
+    },
+    {
+      "topic": "Reporting and operations",
+      "window": "baseline",
+      "n": 100,
+      "ACME Desk": 0.16875,
+      "Clearqueue": 0.0,
+      "Relay Inbox": 0.83125
+    },
+    {
+      "topic": "Reporting and operations",
+      "window": "current",
+      "n": 100,
+      "ACME Desk": 0.13125,
+      "Clearqueue": 0.0,
+      "Relay Inbox": 0.86875
+    },
+    {
+      "topic": "Integrations",
+      "window": "baseline",
+      "n": 100,
+      "ACME Desk": 0.17500000000000002,
+      "Clearqueue": 0.0,
+      "Relay Inbox": 0.8250000000000001
+    },
+    {
+      "topic": "Integrations",
+      "window": "current",
+      "n": 100,
+      "ACME Desk": 0.05,
+      "Clearqueue": 0.0,
+      "Relay Inbox": 0.95
+    }
+  ],
+  "brands": [
+    "ACME Desk",
+    "Clearqueue",
+    "Relay Inbox"
+  ],
+  "position_profile": {
+    "ACME Desk": {
+      "mention_rate": 0.36333333333333334,
+      "avg_pos": 1.9724770642201834,
+      "positions": {
+        "1": 75,
+        "2": 74,
+        "3": 69
+      }
+    },
+    "Clearqueue": {
+      "mention_rate": 1.0,
+      "avg_pos": 2.2483333333333335,
+      "positions": {
+        "2": 451,
+        "3": 149
+      }
+    },
+    "Relay Inbox": {
+      "mention_rate": 1.0,
+      "avg_pos": 1.125,
+      "positions": {
+        "1": 525,
+        "2": 75
+      }
+    }
+  },
+  "citations": [
+    {
+      "topic": "Help desk selection",
+      "window": "baseline",
+      "url": "acme-desk.example/docs/inbox",
+      "refs": 25
+    },
+    {
+      "topic": "Help desk selection",
+      "window": "baseline",
+      "url": "relay-inbox.example/docs/crm",
+      "refs": 75
+    },
+    {
+      "topic": "Help desk selection",
+      "window": "baseline",
+      "url": "support-tools.example/comparisons/selection",
+      "refs": 100
+    },
+    {
+      "topic": "Help desk selection",
+      "window": "current",
+      "url": "acme-desk.example/docs/inbox",
+      "refs": 16
+    },
+    {
+      "topic": "Help desk selection",
+      "window": "current",
+      "url": "relay-inbox.example/docs/crm",
+      "refs": 84
+    },
+    {
+      "topic": "Help desk selection",
+      "window": "current",
+      "url": "support-tools.example/comparisons/selection",
+      "refs": 100
+    },
+    {
+      "topic": "Integrations",
+      "window": "baseline",
+      "url": "acme-desk.example/docs/crm",
+      "refs": 19
+    },
+    {
+      "topic": "Integrations",
+      "window": "baseline",
+      "url": "relay-inbox.example/docs/crm",
+      "refs": 81
+    },
+    {
+      "topic": "Integrations",
+      "window": "baseline",
+      "url": "support-tools.example/comparisons/crm",
+      "refs": 100
+    },
+    {
+      "topic": "Integrations",
+      "window": "current",
+      "url": "acme-desk.example/docs/crm",
+      "refs": 4
+    },
+    {
+      "topic": "Integrations",
+      "window": "current",
+      "url": "relay-inbox.example/docs/crm",
+      "refs": 96
+    },
+    {
+      "topic": "Integrations",
+      "window": "current",
+      "url": "support-tools.example/comparisons/crm",
+      "refs": 100
+    },
+    {
+      "topic": "Reporting and operations",
+      "window": "baseline",
+      "url": "acme-desk.example/docs/reporting",
+      "refs": 28
+    },
+    {
+      "topic": "Reporting and operations",
+      "window": "baseline",
+      "url": "relay-inbox.example/docs/crm",
+      "refs": 72
+    },
+    {
+      "topic": "Reporting and operations",
+      "window": "baseline",
+      "url": "support-tools.example/comparisons/reporting",
+      "refs": 100
+    },
+    {
+      "topic": "Reporting and operations",
+      "window": "current",
+      "url": "acme-desk.example/docs/reporting",
+      "refs": 15
+    },
+    {
+      "topic": "Reporting and operations",
+      "window": "current",
+      "url": "relay-inbox.example/docs/crm",
+      "refs": 85
+    },
+    {
+      "topic": "Reporting and operations",
+      "window": "current",
+      "url": "support-tools.example/comparisons/reporting",
+      "refs": 100
+    }
+  ],
+  "own_domain_cited_without_mention": 0,
+  "own_citation_rate": [
+    {
+      "topic": "Help desk selection",
+      "baseline": {
+        "per_model": {
+          "ChatGPT": [
+            23,
+            80
+          ],
+          "Google Gemini": [
+            2,
+            20
+          ]
+        },
+        "rate": 0.19374999999999998
+      },
+      "current": {
+        "per_model": {
+          "ChatGPT": [
+            6,
+            20
+          ],
+          "Google Gemini": [
+            10,
+            80
+          ]
+        },
+        "rate": 0.2125
+      },
+      "change_pp": 1.8750000000000018
+    },
+    {
+      "topic": "Reporting and operations",
+      "baseline": {
+        "per_model": {
+          "ChatGPT": [
+            26,
+            80
+          ],
+          "Google Gemini": [
+            2,
+            20
+          ]
+        },
+        "rate": 0.21250000000000002
+      },
+      "current": {
+        "per_model": {
+          "ChatGPT": [
+            5,
+            20
+          ],
+          "Google Gemini": [
+            10,
+            80
+          ]
+        },
+        "rate": 0.1875
+      },
+      "change_pp": -2.500000000000002
+    },
+    {
+      "topic": "Integrations",
+      "baseline": {
+        "per_model": {
+          "ChatGPT": [
+            17,
+            80
+          ],
+          "Google Gemini": [
+            2,
+            20
+          ]
+        },
+        "rate": 0.15625
+      },
+      "current": {
+        "per_model": {
+          "ChatGPT": [
+            2,
+            20
+          ],
+          "Google Gemini": [
+            2,
+            80
+          ]
+        },
+        "rate": 0.0625
+      },
+      "change_pp": -9.375
+    }
+  ],
+  "recommendation": {
+    "topic": "Integrations",
+    "change_pp": -15.000000000000005,
+    "supported": true,
+    "ci95_pp": [
+      -28.125,
+      -1.8750000000000018
+    ],
+    "ci_excludes_zero": true,
+    "worst_prompts": [
+      {
+        "prompt_id": "p33",
+        "topic": "Integrations",
+        "prompt": "Compare help desk tools for a team that needs CRM ticket sync.",
+        "baseline": 0.30000000000000004,
+        "current": 0.05,
+        "change_pp": -25.000000000000007,
+        "per_model": {
+          "ChatGPT": {
+            "baseline": {
+              "n": 20,
+              "k": 8,
+              "vis": 0.4,
+              "avg_pos": 2.125,
+              "pos1": 2
+            },
+            "current": {
+              "n": 5,
+              "k": 0,
+              "vis": 0.0,
+              "avg_pos": null,
+              "pos1": 0
+            }
+          },
+          "Google Gemini": {
+            "baseline": {
+              "n": 5,
+              "k": 1,
+              "vis": 0.2,
+              "avg_pos": 1.0,
+              "pos1": 1
+            },
+            "current": {
+              "n": 20,
+              "k": 2,
+              "vis": 0.1,
+              "avg_pos": 2.5,
+              "pos1": 0
+            }
+          }
+        },
+        "min_cell_n": 5,
+        "thin": true
+      },
+      {
+        "prompt_id": "p31",
+        "topic": "Integrations",
+        "prompt": "Which help desk tools connect support tickets with CRM accounts?",
+        "baseline": 0.325,
+        "current": 0.2,
+        "change_pp": -12.5,
+        "per_model": {
+          "ChatGPT": {
+            "baseline": {
+              "n": 20,
+              "k": 9,
+              "vis": 0.45,
+              "avg_pos": 1.8888888888888888,
+              "pos1": 4
+            },
+            "current": {
+              "n": 5,
+              "k": 2,
+              "vis": 0.4,
+              "avg_pos": 2.0,
+              "pos1": 0
+            }
+          },
+          "Google Gemini": {
+            "baseline": {
+              "n": 5,
+              "k": 1,
+              "vis": 0.2,
+              "avg_pos": 1.0,
+              "pos1": 1
+            },
+            "current": {
+              "n": 20,
+              "k": 0,
+              "vis": 0.0,
+              "avg_pos": null,
+              "pos1": 0
+            }
+          }
+        },
+        "min_cell_n": 5,
+        "thin": true
+      },
+      {
+        "prompt_id": "p32",
+        "topic": "Integrations",
+        "prompt": "What support platforms integrate well with a sales CRM?",
+        "baseline": 0.30000000000000004,
+        "current": 0.175,
+        "change_pp": -12.500000000000005,
+        "per_model": {
+          "ChatGPT": {
+            "baseline": {
+              "n": 20,
+              "k": 8,
+              "vis": 0.4,
+              "avg_pos": 2.0,
+              "pos1": 2
+            },
+            "current": {
+              "n": 5,
+              "k": 1,
+              "vis": 0.2,
+              "avg_pos": 1.0,
+              "pos1": 1
+            }
+          },
+          "Google Gemini": {
+            "baseline": {
+              "n": 5,
+              "k": 1,
+              "vis": 0.2,
+              "avg_pos": 1.0,
+              "pos1": 1
+            },
+            "current": {
+              "n": 20,
+              "k": 3,
+              "vis": 0.15,
+              "avg_pos": 1.3333333333333333,
+              "pos1": 2
+            }
+          }
+        },
+        "min_cell_n": 5,
+        "thin": true
+      },
+      {
+        "prompt_id": "p34",
+        "topic": "Integrations",
+        "prompt": "Which support tools help sales teams see open customer issues?",
+        "baseline": 0.275,
+        "current": 0.175,
+        "change_pp": -10.000000000000004,
+        "per_model": {
+          "ChatGPT": {
+            "baseline": {
+              "n": 20,
+              "k": 7,
+              "vis": 0.35,
+              "avg_pos": 1.7142857142857142,
+              "pos1": 4
+            },
+            "current": {
+              "n": 5,
+              "k": 1,
+              "vis": 0.2,
+              "avg_pos": 2.0,
+              "pos1": 0
+            }
+          },
+          "Google Gemini": {
+            "baseline": {
+              "n": 5,
+              "k": 1,
+              "vis": 0.2,
+              "avg_pos": 1.0,
+              "pos1": 1
+            },
+            "current": {
+              "n": 20,
+              "k": 3,
+              "vis": 0.15,
+              "avg_pos": 1.3333333333333333,
+              "pos1": 2
+            }
+          }
+        },
+        "min_cell_n": 5,
+        "thin": true
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "Mention annotations match the answer text",
+      "status": "PASS",
+      "detail": "1800 of 1800 answer-by-brand checks agree"
+    },
+    {
+      "name": "Shortlist positions are 1..n with no gaps or repeats",
+      "status": "PASS",
+      "detail": "0 answers violate"
+    },
+    {
+      "name": "No answer_id appears twice after cleaning",
+      "status": "PASS",
+      "detail": "600 unique successful answers"
+    },
+    {
+      "name": "Denominators equal successful answers in the windows",
+      "status": "PASS",
+      "detail": "600 answers counted across engines and windows"
+    },
+    {
+      "name": "Hand recomputation of Integrations",
+      "status": "PASS",
+      "detail": "baseline: raw 36/100 = 36.0%; like-for-like mean of 40%, 20% = 30.0%; current: raw 12/100 = 12.0%; like-for-like mean of 20%, 10% = 15.0%"
+    },
+    {
+      "name": "Same prompts in both windows",
+      "status": "PASS",
+      "detail": "12 prompts baseline, 12 current"
+    },
+    {
+      "name": "Engine mix is the same in both windows",
+      "status": "WARN",
+      "detail": "largest shift 60% (raw numbers are NOT comparable; use like-for-like)"
+    },
+    {
+      "name": "No small prompt-level cells",
+      "status": "WARN",
+      "detail": "12 of 12 prompts have a cell under 10 answers"
+    }
+  ]
+}
