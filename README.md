@@ -2,7 +2,7 @@
 
 A small tool for a marketing director and two content marketers who can investigate **one issue per week**. It reads an export of AI answers (`answers.jsonl`, `prompts.json`), compares two time periods, and recommends one thing to look into, with the answers to read.
 
-**Live site:** `https://<your-github-username>.github.io/<repo-name>/`  (see "Hosting" below)
+**Live site:** `https://ninaychung.github.io/profound/`  (see "Hosting" below)
 
 ## This week's result
 **Investigate Integrations.** ACME Desk's mention rate on Integrations questions fell from 30% to 15% like-for-like (-15 pp), in both ChatGPT (40% to 20%) and Gemini (20% to 10%). The other two topics rose 5 pp each. The 95% interval for the Integrations change is -28 to -2 pp, which only just excludes zero, and the per-engine tests are not significant (ChatGPT p=0.10, Gemini p=0.22). The right wording is **"consistent and worth investigating, not proven"**.
